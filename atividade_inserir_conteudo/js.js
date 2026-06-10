@@ -23,3 +23,15 @@ let conteiner = document.getElementById("conteiner");
 let itemRemover = document.getElementById("remove");
 
 conteiner.removeChild(itemRemover);
+
+let listaTarefas = document.getElementById("lista-tarefas");
+let novoItemTarefa = document.getElementById("item-tarefa");
+
+function adicionarItem() {
+    console.log("entrei");
+    let itemTarefas = document.createElement("li");
+    itemTarefas.textContent = novoItemTarefa.value;
+    listaTarefas.appendChild(itemTarefas);
+    novoItemTarefa.value = "";
+
+}
