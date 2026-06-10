@@ -1,0 +1,17 @@
+.cartao-destaque {
+    font-weight: bold;
+    color: rgb(66, 45, 45);
+    background-color: brown;
+    border: 1px;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 2px;
+    text-align: center;
+    list-style: none;
+
+}
+
+.cartao-destaque:hover {
+ background-color: blueviolet;
+
+}
