@@ -28,10 +28,12 @@ let listaTarefas = document.getElementById("lista-tarefas");
 let novoItemTarefa = document.getElementById("item-tarefa");
 
 function adicionarItem() {
-    console.log("entrei");
-    let itemTarefas = document.createElement("li");
-    itemTarefas.textContent = novoItemTarefa.value;
-    listaTarefas.appendChild(itemTarefas);
-    novoItemTarefa.value = "";
+    console.log("entrei"); //verificando se o botao executa a função
+    if (novoItemTarefa.value !== "") { //validando se o valor do input esta vazio
+    let itemTarefas = document.createElement("li"); // cria o elemento lista
+    itemTarefas.textContent = novoItemTarefa.value; //insere o valor do input no elemento criado
+    listaTarefas.appendChild(itemTarefas); // insere o elemento no html
+    novoItemTarefa.value = ""; // limpa o input
+      }
 
-}
+} 
