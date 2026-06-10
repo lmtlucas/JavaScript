@@ -12,9 +12,12 @@ usuarios.forEach(function (nome) { // percorre elementos da lista retornando cad
     //lista.innerHTML += `<li>${nome} </li>`;// insere html a cada iteração , usando o incremento += para adicionar cada elemento
     //modo mais seguro:
     let itemLista = document.createElement("li"); //criação de um novo elemento
-        itemLista.textContent = nome; // inserção da variavel referente aos elementos da lista
-        lista.appendChild(itemLista); // inserção do html criado na posição do id lista
+    //itemLista.style.backgroundColor = "red";
+    //itemLista.style.fontWeight = "bold";
+    itemLista.classList.add("cartao-destaque"); // adiciona a classe cartao destaque 
+    itemLista.textContent = nome; // inserção da variavel referente aos elementos da lista
+    lista.appendChild(itemLista); // inserção do html criado na posição do id lista
 
-    
+
 });
 
