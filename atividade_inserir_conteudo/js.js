@@ -17,7 +17,9 @@ usuarios.forEach(function (nome) { // percorre elementos da lista retornando cad
     itemLista.classList.add("cartao-destaque"); // adiciona a classe cartao destaque 
     itemLista.textContent = nome; // inserção da variavel referente aos elementos da lista
     lista.appendChild(itemLista); // inserção do html criado na posição do id lista
-
-
 });
 
+let conteiner = document.getElementById("conteiner");
+let itemRemover = document.getElementById("remove");
+
+conteiner.removeChild(itemRemover);
