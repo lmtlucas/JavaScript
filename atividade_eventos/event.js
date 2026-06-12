@@ -37,7 +37,7 @@ switch (e.key) {
 });
 
 
-//
+// dark mode
 const botaoDark = document.getElementById("btn-dark");
 const body =document.querySelector("body");
 
@@ -46,3 +46,17 @@ function mudarThema(){
 }
 
 botaoDark.addEventListener("click", mudarThema);
+
+//contador de clicks
+
+let contador = 0
+const numero = document.querySelector("b");
+
+botaoDark.addEventListener("click", function (e) {
+    console.log(e);
+    contador ++;
+    numero.textContent = contador;
+    
+})
+
+
