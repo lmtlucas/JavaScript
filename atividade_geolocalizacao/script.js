@@ -15,6 +15,9 @@ fetch("https://rickandmortyapi.com/api/character")
             let paragrafo = document.createElement("p"); // cria o elemento paragrafo
             paragrafo.textContent = item.name; //insere o valor name de cada item no elemento paragrafo criado
             divPersonagem.appendChild(paragrafo); // insere o elemento no html
+            let foto = document.createElement("img"); // cria o elemento paragrafo
+            foto.src = item.image; //insere o valor name de cada item no elemento paragrafo criado
+            divPersonagem.appendChild(foto); // insere o elemento no html
       
     });
 
